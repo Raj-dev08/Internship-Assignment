@@ -12,6 +12,12 @@ export const createLead = async (
 
     if (!name || !email || !status || !source)
       return res.status(400).json({ message: "All fields required" });
+  
+    const existingLead = await Lead.findOne({ email });
+
+    if (existingLead) { 
+      return res.status(400).json({ message: "Lead with this email already exists" });
+    }
 
     const lead = await Lead.create({
       name,

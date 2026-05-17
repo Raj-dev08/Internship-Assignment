@@ -1,0 +1,23 @@
+{
+  "name": "lead-assignment",
+  "version": "1.0.0",
+  "description": "A simple CRM-style lead management system with authentication, role-based access, pagination, filtering, and CRUD operations for leads.",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rd /s /q frontend\\node_modules && rd /s /q backend\\node_modules && del frontend\\package-lock.json && del backend\\package-lock.json",
+    "build": "npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend",
+    "start": "npm run build --prefix backend && npm run start --prefix backend"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Raj-dev08/Internship-Assignment.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Raj-dev08/Internship-Assignment/issues"
+  },
+  "homepage": "https://github.com/Raj-dev08/Internship-Assignment#readme"
+}

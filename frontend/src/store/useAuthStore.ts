@@ -22,7 +22,7 @@ type AuthState = {
   cancelAdmin: () => Promise<any>;
 };
 
-export const useAuthStore = create<AuthState>((set) => ({
+export const useAuthStore = create<AuthState>((set,get) => ({
   user: null,
   loading: false,
 
@@ -98,6 +98,7 @@ export const useAuthStore = create<AuthState>((set) => ({
     try {
       const res = await axiosInstance.patch("/auth/be-admin", data);
       toast.success(res.data.message);
+      get().checkAuth();
       return true;
     } catch (e: any) {
       toast.error(e?.response?.data?.message || "Error");
@@ -109,6 +110,7 @@ export const useAuthStore = create<AuthState>((set) => ({
     try {
       const res = await axiosInstance.patch("/auth/cancel-admin");
       toast.success(res.data.message);
+      get().checkAuth();
       return true;
     } catch (e: any) {
       toast.error(e?.response?.data?.message || "Error");

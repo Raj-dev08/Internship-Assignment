@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "axios": "^1.8.4",
+    "lead-assignment": "file:..",
     "lucide-react": "^0.488.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
@@ -26,7 +27,7 @@
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^6.0.1",
     "autoprefixer": "^10.5.0",
-    "daisyui": "^5.0.19",
+    "daisyui": "^5.5.19",
     "eslint": "^10.3.0",
     "eslint-plugin-react-hooks": "^7.1.1",
     "eslint-plugin-react-refresh": "^0.5.2",
