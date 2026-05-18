@@ -1,7 +1,9 @@
 # Lead Management App (Full Stack CRM)
 
-A simple CRM-style lead management system with authentication, role-based access, pagination, filtering, and CRUD operations for leads.
+Live Demo:
+https://internship-assignment-8flh.onrender.com
 
+A simple CRM-style lead management system with authentication, role-based access, pagination, filtering, and CRUD operations for leads.
 ---
 
 ## Tech Stack
